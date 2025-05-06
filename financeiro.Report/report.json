@@ -1,0 +1,123 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.62\",\"type\":2},\"customTheme\":{\"name\":\"Bloom\",\"version\":\"5.62\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Bloom",
+            "path": "BuiltInThemes/Bloom.json",
+            "type": 201
+          },
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":-0.25}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1000.00,
+      "name": "d71944be5d703f3fe25a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2f7f382048a707087cbe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":310.7368421052632,\"y\":17.68421052631579,\"z\":6000,\"width\":1158.3157894736842,\"height\":521.6842105263158,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"keyDriversVisual\",\"projections\":{\"Target\":[{\"queryRef\":\"DadosFinanceiros.Valor\"}],\"ExplainBy\":[{\"queryRef\":\"DadosFinanceiros.Tipo\"},{\"queryRef\":\"DadosFinanceiros.Componente\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Valor\"},\"Name\":\"DadosFinanceiros.Valor\",\"NativeReferenceName\":\"Valor\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Tipo\"},\"Name\":\"DadosFinanceiros.Tipo\",\"NativeReferenceName\":\"Tipo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Componente\"},\"Name\":\"DadosFinanceiros.Componente\",\"NativeReferenceName\":\"Componente\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"keyDrivers\":[{\"properties\":{\"targetValue\":{\"expr\":{\"Literal\":{\"Value\":\"'''Administrativo'''\"}}},\"selectedAnalysis\":{\"expr\":{\"Literal\":{\"Value\":\"'topProfiles'\"}}},\"allowKeyDrivers\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"numericTargetSelectedKind\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 521.68,
+          "width": 1158.32,
+          "x": 310.74,
+          "y": 17.68,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"359fe2af33393494dcda\",\"layouts\":[{\"id\":0,\"position\":{\"x\":481.2467532467532,\"y\":572.2597402597403,\"z\":4000,\"width\":466.2857142857143,\"height\":412.67532467532465,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DadosFinanceiros.Componente\",\"active\":true}],\"Y\":[{\"queryRef\":\"DadosFinanceiros._mValorTotalDespesas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Componente\"},\"Name\":\"DadosFinanceiros.Componente\",\"NativeReferenceName\":\"Componente\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalDespesas\"},\"Name\":\"DadosFinanceiros._mValorTotalDespesas\",\"NativeReferenceName\":\"_mValorTotalDespesas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalDespesas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"leaderLines\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelContentLayout\":{\"expr\":{\"Literal\":{\"Value\":\"'MultiLine'\"}}},\"enableDetailDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"dynamicLabelDetail\":{\"expr\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosFinanceiros\"}},\"Property\":\"_mMediaDespesas\"}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"highlightMatching\":1}}],\"valueAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"markers\":[{\"properties\":{\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"y2Axis\":[{\"properties\":{\"secShowAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"legendMarkerRendering\":{\"expr\":{\"Literal\":{\"Value\":\"'lineOnly'\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'LeftCenter'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Média Despesas'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"DadosFinanceiros._mValorTotalDespesas\"}},\"Function\":1}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelHorizontalPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'right'\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"DadosFinanceiros._mValorTotalDespesas\",\"id\":\"1\"}}]}}}",
+          "filters": "[]",
+          "height": 412.68,
+          "width": 466.29,
+          "x": 481.25,
+          "y": 572.26,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"3b055e7691297f4ff746\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.207792207792206,\"y\":194.4935064935065,\"z\":0,\"width\":244.36363636363635,\"height\":167.06493506493507,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"DadosFinanceiros._mValorTotalDespesas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalDespesas\"},\"Name\":\"DadosFinanceiros._mValorTotalDespesas\",\"NativeReferenceName\":\"_mValorTotalDespesas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalDespesas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 167.06,
+          "width": 244.36,
+          "x": 16.21,
+          "y": 194.49,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4843e2c38ff1a83fbe94\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.207792207792206,\"y\":372.77922077922074,\"z\":2000,\"width\":244.36363636363635,\"height\":167.06493506493507,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"DadosFinanceiros._mReceitaxDespesas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mMargemDeLucro\"},\"Name\":\"DadosFinanceiros._mReceitaxDespesas\",\"NativeReferenceName\":\"_mMargemDeLucro\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mMargemDeLucro\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 167.06,
+          "width": 244.36,
+          "x": 16.21,
+          "y": 372.78,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a6ec4605f86327f44a18\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.207792207792206,\"y\":17.454545454545453,\"z\":1000,\"width\":244.36363636363635,\"height\":167.06493506493507,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"DadosFinanceiros._mValorTotalReceita\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalReceita\"},\"Name\":\"DadosFinanceiros._mValorTotalReceita\",\"NativeReferenceName\":\"_mValorTotalReceita\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalReceita\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 167.06,
+          "width": 244.36,
+          "x": 16.21,
+          "y": 17.45,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"aea4b06b5b3ef97bc0fc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16.207792207792206,\"y\":572.2597402597403,\"z\":3000,\"width\":445.09090909090907,\"height\":412.67532467532465,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"DadosFinanceiros._mValorTotalReceita\"}],\"Category\":[{\"queryRef\":\"DadosFinanceiros.Componente\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalReceita\"},\"Name\":\"DadosFinanceiros._mValorTotalReceita\",\"NativeReferenceName\":\"_mValorTotalReceita\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Componente\"},\"Name\":\"DadosFinanceiros.Componente\",\"NativeReferenceName\":\"Componente\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalReceita\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableDetailDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelContentLayout\":{\"expr\":{\"Literal\":{\"Value\":\"'MultiLine'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}}}},{\"properties\":{\"dynamicLabelDetail\":{\"expr\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosFinanceiros\"}},\"Property\":\"_mMediaDespesas\"}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"highlightMatching\":1}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'LeftCenter'\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 412.68,
+          "width": 445.09,
+          "x": 16.21,
+          "y": 572.26,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f59fc0fb42f214ef9bef\",\"layouts\":[{\"id\":0,\"position\":{\"x\":962.4935064935064,\"y\":572.2597402597403,\"z\":5000,\"width\":537.3506493506493,\"height\":412.67532467532465,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"DadosFinanceiros.Tipo\",\"active\":true},{\"queryRef\":\"DadosFinanceiros.Componente\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(DadosFinanceiros.Valor)\"}],\"Columns\":[{\"queryRef\":\"DadosFinanceiros.DATA.Variation.Hierarquia de datas.Ano\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Tipo\"},\"Name\":\"DadosFinanceiros.Tipo\",\"NativeReferenceName\":\"Tipo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Componente\"},\"Name\":\"DadosFinanceiros.Componente\",\"NativeReferenceName\":\"Componente\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Valor\"}},\"Function\":0},\"Name\":\"Sum(DadosFinanceiros.Valor)\",\"NativeReferenceName\":\"Valor\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"DATA\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"DadosFinanceiros.DATA.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"DATA Ano\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"DadosFinanceiros.Tipo\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosFinanceiros\"}},\"Property\":\"Tipo\"}}],\"isPinned\":true},{\"queryRefs\":[\"DadosFinanceiros.Componente\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosFinanceiros\"}},\"Property\":\"Componente\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Despesas'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Administrativo'\"}}],\"isToggled\":true}]}]}}],\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 412.68,
+          "width": 537.35,
+          "x": 962.49,
+          "y": 572.26,
+          "z": 5000.00
+        }
+      ],
+      "width": 1500.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Página 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e2c8badff8dee496d754",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3b6e5f6f6d274c5217b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":41.660377358490564,\"z\":0,\"width\":482.71698113207543,\"height\":279.8490566037736,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"DadosFinanceiros._mValorTotalDespesas\"}],\"Category\":[{\"queryRef\":\"DadosFinanceiros.Componente\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalDespesas\"},\"Name\":\"DadosFinanceiros._mValorTotalDespesas\",\"NativeReferenceName\":\"_mValorTotalDespesas\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Componente\"},\"Name\":\"DadosFinanceiros.Componente\",\"NativeReferenceName\":\"Componente\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"_mValorTotalDespesas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 279.85,
+          "width": 482.72,
+          "x": 0.00,
+          "y": 41.66,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Bloom"
+}

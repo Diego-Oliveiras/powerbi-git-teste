@@ -1,0 +1,22 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["DadosFinanceiros"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.141.1451.0 (25.03)+5007b75f0f7edbed506e31fcb76584cd6d711788
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DadosFinanceiros
+ref table DateTableTemplate_2afd4bbb-4c9c-44d9-b7f1-1281892ed465
+ref table LocalDateTable_72b59eca-959c-49d6-aa76-197294629dc6
+
+ref cultureInfo pt-BR
+
